@@ -1,7 +1,7 @@
 #ifndef C_H
 #define C_H
-
-class C {
+#include "B.h"
+class C: public B{
   public:
     virtual void gamma()=0;
 };

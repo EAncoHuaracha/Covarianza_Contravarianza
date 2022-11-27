@@ -1,7 +1,7 @@
 #ifndef B_H
 #define B_H
-
-class B {
+#include "A.h"
+class B: public A{
   public:
     virtual void beta()=0;
 };
