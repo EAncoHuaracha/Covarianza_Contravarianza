@@ -26,11 +26,18 @@ public class Y extends X {
         return c;
     }
     */
+    /*
     public B foo(C c) {
         c.beta();
         System.out.println("Hola soy beta desde Y");
         B b = new Clase_C();
         return b;
     }
-
+    */
+    public B foo(A a) {
+        a.alpha();
+        System.out.println("Hola soy alpha desde Y");
+        B b = new Clase_C();
+        return b;
+    }
 }
