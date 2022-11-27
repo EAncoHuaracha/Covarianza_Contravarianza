@@ -6,8 +6,8 @@
 
 int main(){
   X* y = new Y();
-  B* b = new Clase_B();
+  //B* b = new Clase_B(); //violacion de segmento
   B* c = new Clase_C();
-  y->foo(b);
+  //y->foo(b);
   y->foo(c);
 }
