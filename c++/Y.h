@@ -17,15 +17,21 @@ class Y: public X{
     }
     */
 
-    
+    /*
     // Contravarianza no es aceptada
     A* foo(B *b){
       b -> beta();
       B* b2 = new Clase_C();
       return b2;
     }
-    
-    
+    */
+
+   // Covarianza si es aceptada 
+    C* foo(B *b){
+      b -> beta();
+      C* b2 = new Clase_C();
+      return b2;
+    }
 };
 
 #endif
