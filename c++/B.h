@@ -1,5 +1,5 @@
 #ifndef B_H
-#define A_H
+#define B_H
 
 class B {
   public:

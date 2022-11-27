@@ -7,13 +7,13 @@
 #include "Clase_C.h"
 #include "X.h"
 
-class y: public x{
+class Y: public X{
   public:
-    B* foo(B b){
-      b.beta();
+    B* foo(B *b){
+      b -> beta();
       B* b2 = new Clase_C();
       return b2;
     }
-}
+};
 
-
+#endif
