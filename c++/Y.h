@@ -9,11 +9,23 @@
 
 class Y: public X{
   public:
+    /*
     B* foo(B *b){
       b -> beta();
       B* b2 = new Clase_C();
       return b2;
     }
+    */
+
+    
+    // Contravarianza no es aceptada
+    A* foo(B *b){
+      b -> beta();
+      B* b2 = new Clase_C();
+      return b2;
+    }
+    
+    
 };
 
 #endif
