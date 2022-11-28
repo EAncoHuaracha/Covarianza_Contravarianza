@@ -26,12 +26,24 @@ class Y: public X{
     }
     */
 
-   // Covarianza si es aceptada 
+    /*
+    // Covarianza si es aceptada 
     C* foo(B *b){
       b -> beta();
+      std::cout << "Hola soy beta desde Y\n";
       C* b2 = new Clase_C();
       return b2;
     }
+    */
+
+    
+    B* foo(C *c){
+      c -> beta();
+      std::cout << "Hola soy beta Y\n";
+      B* b = new Clase_C();
+      return b;
+    }
+    
 };
 
 #endif

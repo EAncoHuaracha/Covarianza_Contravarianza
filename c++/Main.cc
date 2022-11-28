@@ -10,4 +10,7 @@ int main(){
   B* c = new Clase_C();
   //y->foo(b);
   y->foo(c);
+
+  delete y;
+  delete c;
 }
