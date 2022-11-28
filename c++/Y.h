@@ -36,14 +36,21 @@ class Y: public X{
     }
     */
 
-    
+    /* 
     B* foo(C *c){
       c -> beta();
       std::cout << "Hola soy beta Y\n";
       B* b = new Clase_C();
       return b;
     }
-    
+    */
+   
+    // contravarianza recibiendo nos muestra error 
+    B* foo(A *a){
+      a -> alpha();
+      std::cout << "Hola soy alpha desde Y\n";
+      B* b = new Clase_C();
+      return b;
 };
 
 #endif
